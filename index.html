@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form Form</title>
+    <link rel="stylesheet" href="indexx.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend><br><br>
+       
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+        <label>Phone Number</label>
+        <input type="tel" id="call" pattern="{0-9}{10}" placeholder="Enter 10-digits number" required><br><br>
+
+
+        <label>Gender</label><br>
+       <input type="radio" name="gender" value="Male">Male
+       <input type="radio" name="gender" value="Female">Female  <br><br>
+
+        <label>Skills</label><br>
+        <input type="checkbox" class="skill" value="Javascript">Javascript
+        <input type="checkbox" class="skill" value="Java">Java
+        <input type="checkbox" class="skill" value="Python">Python <br><br>
+
+        <label>Address</label>
+        <textarea id="add" rows="4" placeholder="Enter your Address"></textarea>
+
+      </fieldset>
+
+      <h3>Other Information</h3>
+
+      <fieldset>
+        <legend>Education & Experience</legend><br><br>
+
+        <label>10th Grade & Percentage</label>
+        <input id="tenth" type="text" required><br><br>
+
+         <label>12th Grade & Percentage</label>
+        <input id="twelth" type="text" required><br><br>
+
+         <label>Experience</label>
+        <textarea id="experience" rows="2" placeholder="Enter your Experience" required></textarea>
+
+        </fieldset><br>
+
+        <div class="button">
+            <button type="reset" id="reset">Reset</button>
+            <button type="submit" id="submit">Submit</button>
+
+
+        </div>
+</form>
+<script src="indexx.js"></script>
+</body>
+</html>
+
