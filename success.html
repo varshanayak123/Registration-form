@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Information</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Information</title>
+</head>
+<body>
+
+    <h1>Information Submitted Successfully!</h1>
+
+    <h3>Your Submitted Details</h3>
+
+    <p>Name: <span id="name"></span></p>
+    <p>Email: <span id="email"></span></p>
+    <p>Phone: <span id="call"></span></p>
+    <p>Gender: <span name="gender"></span></p>
+    <p>Skills: <span class ="skills"></span></p>
+    <p>Address: <span id="add"></span></p>
+    <p>10th Percentage: <span id="tenth"></span></p>
+    <p>12th Percentage: <span id="twelth"></span></p>
+    <p>Experience: <span id="experience"></span></p>
+
+    <script>
+        document.querySelector("#name").innerText = localStorage.getItem("Name");
+        document.querySelector("#email").innerText = localStorage.getItem("Email");
+        document.querySelector("#call").innerText = localStorage.getItem("Phone");
+        document.querySelector("#gender").innerText = localStorage.getItem("Gender");
+        document.querySelector(".skills").innerText = localStorage.getItem("Skills");
+        document.querySelector("#add").innerText = localStorage.getItem("Address");
+        document.querySelector("#tenth").innerText = localStorage.getItem("Tenth");
+        document.querySelector("#twelth").innerText = localStorage.getItem("Twelth");
+        document.querySelector("#experience").innerText = localStorage.getItem("Experience");
+    </script>
+
+</body>
+</html>
+</body>
+</html>
