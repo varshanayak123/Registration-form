@@ -1,40 +1,53 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    background-color:#9FA1FF
+    background-color: #9FA1FF;
 }
+
 h1{
     text-align: center;
     color: black;
 }
+
 form{
-   margin: auto;
-   width: 650px;
+    margin: auto;
+    width: 90%;
+    max-width: 650px;
 }
+
 fieldset{
-    background-color:white;
-    
-   
+    background-color: white;
 }
+
 label{
     display: block;
     margin-top: 10px;
 }
+
+input,
+textarea,
+select{
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .button{
     text-align: center;
 }
-#reset{
-    color:white;
+
+#reset,
+#submit{
+    color: white;
     background-color: blue;
     width: 120px;
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
 }
-#submit{
-    color:white;
-    background-color: blue;
-    width: 120px;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px;
+
+@media (max-width: 600px){
+    #reset,
+    #submit{
+        width: 100px;
+        padding: 8px;
+    }
 }
